@@ -23,3 +23,8 @@ O node está na versão 18.16.0
 
 ## `typeorm`
 0.2.40
+
+### .ENV
+muito importante ser adicionado os seguintes campos no .env quando for iniciar o projeto 
+</br>NODE_ENV= 
+</br>PGSSLMODE=no-verify
