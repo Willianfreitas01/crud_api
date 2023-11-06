@@ -12,7 +12,7 @@ export const getUser = async (request, response) => {
   const getUserRepository = getRepository(User);
   const users = await getUserRepository
     .createQueryBuilder('user')
-    .orderBy('user.createdAt', 'DESC') // Ordena pela data de criação em ordem ascendente
+    .orderBy('user.created_at', 'DESC')
     .getMany();
 
     console.log(users)    

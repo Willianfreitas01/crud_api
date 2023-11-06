@@ -2,7 +2,6 @@ import {
   Column, 
   Entity, 
   PrimaryGeneratedColumn,
-  DeleteDateColumn,
   CreateDateColumn,
   UpdateDateColumn 
 } from "typeorm"
@@ -18,8 +17,8 @@ export class User {
   @Column({ name: "email", type: "varchar" })
   email: String
 
-  @Column({ name: "phone", type: "int" })
-  phone: String
+  @Column({ name: "phone", type: "numeric" })
+  phone: Number
 
   @CreateDateColumn({
     name: "created_at",
@@ -27,7 +26,7 @@ export class User {
     default: () => "current_timestamp(6)",
     onUpdate: "current_timestamp(6)",
   })
-  createdAt: Date
+  created_at: Date
   @UpdateDateColumn({
     name: "updated_at",
     type: "timestamp",
