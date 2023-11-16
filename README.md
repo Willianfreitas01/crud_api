@@ -1,7 +1,5 @@
 # crud_api
 
-Esse é a api de um registro de usuário para o processo seletivo da AR Digital labs
-
 ## Tecnologias
 
 Na api eu utilizei mais algumas tecnologias para conseguir rodar o projeto, tal como o yarn como gestor de pacotes e tanto quanto o postgresql que eu usei o pgadmin, abaixo estará a versão de cada um que eu utilizei
